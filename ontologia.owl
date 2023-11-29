@@ -1,0 +1,1057 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#"
+     xml:base="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:sp="http://spinrdf.org/sp#"
+     xmlns:arg="http://spinrdf.org/arg#"
+     xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+     xmlns:fno="https://w3id.org/function/ontology#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:spl="http://spinrdf.org/spl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:fnoi="https://w3id.org/function/vocabulary/implementation#"
+     xmlns:fnom="https://w3id.org/function/vocabulary/mapping#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:gufo="http://purl.org/nemo/gufo#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:qudt="http://qudt.org/schema/qudt/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:sosa="http://www.w3.org/ns/sosa/"
+     xmlns:spin="http://spinrdf.org/spin#"
+     xmlns:vaem="http://www.linkedmodel.org/schema/vaem#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:dtype="http://www.linkedmodel.org/schema/dtype#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:spacecon="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese">
+        <owl:imports rdf:resource="http://purl.org/nemo/gufo#/1.0.0"/>
+        <owl:imports rdf:resource="http://qudt.org/2.1/schema/facade/qudt"/>
+        <owl:imports rdf:resource="http://qudt.org/2.1/vocab/dimensionvector"/>
+        <owl:imports rdf:resource="http://qudt.org/2.1/vocab/prefix"/>
+        <owl:imports rdf:resource="http://qudt.org/2.1/vocab/quantitykind"/>
+        <owl:imports rdf:resource="http://qudt.org/2.1/vocab/sou"/>
+        <owl:imports rdf:resource="http://qudt.org/2.1/vocab/unit"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
+        <owl:imports rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <owl:imports rdf:resource="http://www.w3.org/2006/time#2016"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/sosa/"/>
+        <owl:imports rdf:resource="https://w3id.org/function/ontology/1.0.0"/>
+        <owl:imports rdf:resource="https://w3id.org/function/vocabulary/implementation/0.1.1"/>
+        <owl:imports rdf:resource="https://w3id.org/function/vocabulary/mapping/0.2.1"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#characterizes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#characterizes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextualElement"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+        <rdfs:comment xml:lang="en">The relation between a contextual element and an entity so that the contextual element characterizes the entity in some way.</rdfs:comment>
+        <rdfs:comment xml:lang="en">characterizes</rdfs:comment>
+        <rdfs:label xml:lang="pt">caracteriza</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasAspect -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasAspect">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextualElement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Aspect"/>
+        <rdfs:comment xml:lang="en">A relation between a contextual element and an aspect that characterizes it.</rdfs:comment>
+        <rdfs:label xml:lang="en">has aspect</rdfs:label>
+        <rdfs:label xml:lang="pt">tem aspecto</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasCategory -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasCategory">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextCategory"/>
+        <rdfs:comment>This property relates a thing to a context category.</rdfs:comment>
+        <rdfs:label xml:lang="en">has category</rdfs:label>
+        <rdfs:label xml:lang="pt">tem categoria</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasContextElement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasContextElement">
+        <rdfs:comment>Relates a context element to some thing.</rdfs:comment>
+        <rdfs:label xml:lang="en">has context element</rdfs:label>
+        <rdfs:label xml:lang="pt">tem elemento contextual</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasContextValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasContextValue">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextValue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasCtxElemParamMapping -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasCtxElemParamMapping">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextElementParameterMapping"/>
+        <rdfs:comment>A mapping of a function parameter to a context element used in a specific derived context element.</rdfs:comment>
+        <rdfs:label xml:lang="en">has context element parameter mapping</rdfs:label>
+        <rdfs:label xml:lang="pt">tem mapeamento de parâmetro para elemento de contexto</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasCtxElement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasCtxElement">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextualElement"/>
+        <rdfs:comment xml:lang="en">A relation between a contextual element input and the related contextual element.</rdfs:comment>
+        <rdfs:label xml:lang="en">has contextual element</rdfs:label>
+        <rdfs:label xml:lang="pt">tem elemento contextual</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasFunction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasFunction">
+        <rdfs:range rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:comment>This property relates a derived context element to a function. This function is responsible to generate the value of an instance of this context element from other context element instances specified as parameter mappings.</rdfs:comment>
+        <rdfs:label xml:lang="en">has function</rdfs:label>
+        <rdfs:label xml:lang="pt">tem função</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasInput -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasInput">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ParametrizedContextualElement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextualElementInput"/>
+        <rdfs:comment>A relation between a parametrized contextual element and one of its inputs.</rdfs:comment>
+        <rdfs:label xml:lang="en">has input</rdfs:label>
+        <rdfs:label xml:lang="pt">tem entrada</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasQoCParameter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasQoCParameter">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#QoCParameter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasQoCValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasQoCValue">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#SimpleQoCValue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasUnit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#SensorSpecificationValue"/>
+        <rdfs:range rdf:resource="http://qudt.org/schema/qudt/Unit"/>
+        <rdfs:comment>This property specifies the unit related to an sensor specification value.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasUnit</rdfs:label>
+        <rdfs:label xml:lang="pt">temUnidade</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasValue">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#isValueOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#SensorSpecification"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#SensorSpecificationValue"/>
+        <rdfs:comment>This property relates a value to a sensor specification.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasValue</rdfs:label>
+        <rdfs:label xml:lang="pt">temValor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#isValueOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#isValueOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#SensorSpecificationValue"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#SensorSpecification"/>
+        <rdfs:comment>This property relates a value to a sensor specification.</rdfs:comment>
+        <rdfs:label xml:lang="en">isValueOf</rdfs:label>
+        <rdfs:label xml:lang="pt">éValorDe</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#listParameter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#listParameter"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#samplingRate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#samplingRate">
+        <rdfs:range rdf:resource="http://qudt.org/schema/qudt/Quantity"/>
+        <rdfs:comment xml:lang="en">The sampling rate of a concept that represents a window of values.</rdfs:comment>
+        <rdfs:label xml:lang="en">sampling rate</rdfs:label>
+        <rdfs:label xml:lang="pt">taxa de amostragem</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#windowSize -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#windowSize">
+        <rdfs:range rdf:resource="http://qudt.org/schema/qudt/Quantity"/>
+        <rdfs:comment xml:lang="en">The window size (in time units) of a concept that represents a window of values.</rdfs:comment>
+        <rdfs:label xml:lang="pt">tamanho da janela</rdfs:label>
+        <rdfs:label xml:lang="en">window size</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#doubleResult -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#doubleResult">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasOffset -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasOffset">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#SensorSpecificationValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>This property specifies an offset related to a sensor specification value.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasOffset</rdfs:label>
+        <rdfs:label xml:lang="pt">temOffset</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#implementationType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#implementationType">
+        <rdfs:domain rdf:resource="https://w3id.org/function/ontology#ParameterMapping"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#windowOverlapPercentage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#windowOverlapPercentage">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="en">The window overlap percentage of a concept that represents a window of values.</rdfs:comment>
+        <rdfs:label xml:lang="pt">porcentagem de sobreposição de janela</rdfs:label>
+        <rdfs:label xml:lang="en">window overlap percentage</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Aspect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Aspect">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Role"/>
+        <terms:description>An aspect of an entity related to some context element.</terms:description>
+        <rdfs:label xml:lang="en">Aspect</rdfs:label>
+        <rdfs:label xml:lang="pt">Aspecto</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ConceptualCategory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ConceptualCategory">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Role"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextCategory"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#OperationalCategory"/>
+        <rdfs:comment>A category that classify a context information based on semantics and conceptual relationships.</rdfs:comment>
+        <rdfs:label xml:lang="pt">Categoria Conceitual</rdfs:label>
+        <rdfs:label xml:lang="en">Conceptual Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextCategory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextCategory">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Role"/>
+        <rdfs:comment>A context category that can classify a context information.</rdfs:comment>
+        <rdfs:label xml:lang="pt">Categoria de Contexto</rdfs:label>
+        <rdfs:label xml:lang="en">Context Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextElementParameterMapping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextElementParameterMapping">
+        <rdfs:comment>A special mapping of a function parameter to a context element .</rdfs:comment>
+        <rdfs:label xml:lang="en">Context Element Parameter Mapping</rdfs:label>
+        <rdfs:label xml:lang="pt">Mapeamento de Parâmetro para Elemento de Contexto</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextValue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextValue">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextualElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextualElement">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#characterizes"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasAspect"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Aspect"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A contextual element is any piece of data or information that allows characterizing an entity in a given domain.</rdfs:comment>
+        <rdfs:label xml:lang="en">Contextual Element</rdfs:label>
+        <rdfs:label xml:lang="pt">Elemento Contextual</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextualElementInput -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextualElementInput">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasCtxElement"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextualElement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An input of a parametrized contextual element.</rdfs:comment>
+        <rdfs:label xml:lang="en">Contextual element input</rdfs:label>
+        <rdfs:label xml:lang="pt">Entrada de elemento contextual</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextualElementInstance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextualElementInstance">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasContextElement"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextualElement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasContextValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasTime"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.w3.org/2006/time#Instant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextualElementWindowedInput -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextualElementWindowedInput">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextualElementInput"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#samplingRate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://qudt.org/schema/qudt/Quantity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#windowSize"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://qudt.org/schema/qudt/Quantity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#windowOverlapPercentage"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An input of a parametrized contextual element that is a window of contextual elements.</rdfs:comment>
+        <rdfs:label xml:lang="en">Contextual element windowed input</rdfs:label>
+        <rdfs:label xml:lang="pt">Entrada de elemento contextual em janela</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#OperationalCategory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#OperationalCategory">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Role"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextCategory"/>
+        <rdfs:comment>A category that classify a context information based on semantics and conceptual relationships.how it was acquired, modeled and managed.</rdfs:comment>
+        <rdfs:label xml:lang="pt">Categoria Operacional</rdfs:label>
+        <rdfs:label xml:lang="en">Operational Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ParametrizedContextualElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ParametrizedContextualElement">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextualElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasInput"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextualElementInput"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A contextual element that represents a secondary context and that needs input context data to generate context information.</rdfs:comment>
+        <rdfs:label xml:lang="pt">Elemento contextual parametrizado</rdfs:label>
+        <rdfs:label xml:lang="en">Parametrized contextual element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#QoCParameter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#QoCParameter">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#SensorSpecification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#SensorSpecification">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <rdfs:comment>A specification of a sensor (physical, logical or virtual) that is a raw context source.</rdfs:comment>
+        <rdfs:label xml:lang="pt">EspecificaçãoDeSensor</rdfs:label>
+        <rdfs:label xml:lang="en">SensorSpecification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#SensorSpecificationValue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#SensorSpecificationValue">
+        <rdfs:comment xml:lang="en">A specification of a specific value provided by a sensor specified by a SensorSpecification. This specification include an offset of the value in the sensor value vector and the related unit.</rdfs:comment>
+        <rdfs:label xml:lang="en">SensorSpecificationValue</rdfs:label>
+        <rdfs:label xml:lang="pt">ValorDeEspecificaçãoDeSensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#SimpleQoCValue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#SimpleQoCValue">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/hasQuantity"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://qudt.org/schema/qudt/Quantity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#hasQoCParameter"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#QoCParameter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Sensor -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Sensor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#AccelerationX -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#AccelerationX">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Aspect"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#PrimaryContext"/>
+        <rdfs:comment xml:lang="en">X-axis component of acceleration.</rdfs:comment>
+        <rdfs:label xml:lang="en">Acceleration X</rdfs:label>
+        <rdfs:label xml:lang="pt">Aceleração X</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#AccelerationY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#AccelerationY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Aspect"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#PrimaryContext"/>
+        <rdfs:comment>Y-axis component of acceleration.</rdfs:comment>
+        <rdfs:label xml:lang="en">Acceleration Y</rdfs:label>
+        <rdfs:label xml:lang="pt">Aceleração Y</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#AccelerationZ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#AccelerationZ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Aspect"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#PrimaryContext"/>
+        <rdfs:comment>Z-axis component of acceleration.</rdfs:comment>
+        <rdfs:label xml:lang="en">Acceleration Z</rdfs:label>
+        <rdfs:label xml:lang="pt">Aceleração Z</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Activity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Activity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Aspect"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ActivityCategory"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#SecondaryContext"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ActivityCategory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ActivityCategory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ConceptualCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#AmbientTemperature -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#AmbientTemperature">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Aspect"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#PrimaryContext"/>
+        <rdfs:comment>Ambient temperature in some place specified in some temperature measurement unit (such as Celsius or Farenheit).</rdfs:comment>
+        <rdfs:label xml:lang="en">Ambient Temperature</rdfs:label>
+        <rdfs:label xml:lang="pt">Temperatura Ambiente</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#AngularVelocityX -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#AngularVelocityX">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Aspect"/>
+        <rdfs:comment>X-axis component of the angular velocity.</rdfs:comment>
+        <rdfs:label xml:lang="en">Angular Velocity X</rdfs:label>
+        <rdfs:label xml:lang="pt">Velocidade Angular X</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#AngularVelocityY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#AngularVelocityY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Aspect"/>
+        <rdfs:comment>Y-axis component of the angular velocity.</rdfs:comment>
+        <rdfs:label xml:lang="en">Angular Velocity Y</rdfs:label>
+        <rdfs:label xml:lang="pt">Velocidade Angular Y</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#AngularVelocityZ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#AngularVelocityZ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Aspect"/>
+        <rdfs:comment>Z-axis component of the angular velocity.</rdfs:comment>
+        <rdfs:label xml:lang="en">Angular Velocity Z</rdfs:label>
+        <rdfs:label xml:lang="pt">Velocidade Angular Z</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ApacheCommonsMath_StatUtils -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ApacheCommonsMath_StatUtils">
+        <rdf:type rdf:resource="https://w3id.org/function/vocabulary/implementation#JavaClass"/>
+        <fnoi:class-name>br.edu.leonardo.tese.framework.util.QuantityStats</fnoi:class-name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#CompassAngle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#CompassAngle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Aspect"/>
+        <rdfs:comment>Compass angle value.</rdfs:comment>
+        <rdfs:label xml:lang="en">Compass Angle</rdfs:label>
+        <rdfs:label xml:lang="pt">Ângulo da Bússola</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextOfInterestCategory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextOfInterestCategory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ConceptualCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#FloatingPointMeanFunction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#FloatingPointMeanFunction">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <fno:expects rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#FloatingPointMeanFuntion_Parameters"/>
+        <fno:returns rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#FloatingPointMeanFunction_Output"/>
+        <fno:solves rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Mean"/>
+        <terms:description>This function can calculate the mean of a set of floating-point values and return a floating-point value as result.</terms:description>
+        <fno:name>The floating-point mean function</fno:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#FloatingPointMeanFunction_Output -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#FloatingPointMeanFunction_Output">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Output"/>
+        <fno:predicate rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#doubleResult"/>
+        <fno:type rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <fno:required rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</fno:required>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#FloatingPointMeanFuntion_Parameters -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#FloatingPointMeanFuntion_Parameters"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#FlotingPointMeanFunction_Mapping -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#FlotingPointMeanFunction_Mapping">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Mapping"/>
+        <fno:function rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#FloatingPointMeanFunction"/>
+        <fno:implementation rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ApacheCommonsMath_StatUtils"/>
+        <fno:methodMapping rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#StatUtils_Mean_Mapping"/>
+        <fno:parameterMapping rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#StatUtils_Mean_values_ParamMap"/>
+        <fno:returnMapping rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#StatUtils_Mean_OutputMap"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#IndividualCategory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#IndividualCategory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ConceptualCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Latitude -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Latitude">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Aspect"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#LocationCategory"/>
+        <rdfs:comment>A value of latitude.</rdfs:comment>
+        <rdfs:label xml:lang="en">Latitude</rdfs:label>
+        <rdfs:label xml:lang="pt">Latitude</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#LinearAccelerationX -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#LinearAccelerationX">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Aspect"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#SecondaryContext"/>
+        <rdfs:comment>X-axis component of the linear acceleration (acceleration without gravity).</rdfs:comment>
+        <rdfs:label xml:lang="pt">Aceleração Linear X</rdfs:label>
+        <rdfs:label xml:lang="en">Linear Acceleration X</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#LinearAccelerationY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#LinearAccelerationY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Aspect"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#SecondaryContext"/>
+        <rdfs:comment>Y-axis component of the linear acceleration (acceleration without gravity).</rdfs:comment>
+        <rdfs:label xml:lang="pt">Aceleração Linear Y</rdfs:label>
+        <rdfs:label xml:lang="en">Linear Acceleration Y</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#LinearAccelerationZ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#LinearAccelerationZ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Aspect"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#SecondaryContext"/>
+        <rdfs:comment>Z-axis component of the linear acceleration (acceleration without gravity).</rdfs:comment>
+        <rdfs:label xml:lang="pt">Aceleração Linear Z</rdfs:label>
+        <rdfs:label xml:lang="en">Linear Acceleration Z</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ListParameter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ListParameter">
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <fno:predicate rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#listParameter"/>
+        <fno:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+        <fno:required rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</fno:required>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#LocationCategory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#LocationCategory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ConceptualCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Longitude -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Longitude">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Aspect"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#LocationCategory"/>
+        <rdfs:comment>A value of longitude.</rdfs:comment>
+        <rdfs:label xml:lang="en">Longitude</rdfs:label>
+        <rdfs:label xml:lang="pt">Longitude</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#MagneticFieldX -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#MagneticFieldX">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Aspect"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#PrimaryContext"/>
+        <rdfs:comment>X-axis component of the magnetic field.</rdfs:comment>
+        <rdfs:label xml:lang="pt">Campo Magnético X</rdfs:label>
+        <rdfs:label xml:lang="en">Magnetic Field X</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#MagneticFieldY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#MagneticFieldY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Aspect"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#PrimaryContext"/>
+        <rdfs:comment>Y-axis component of the magnetic field.</rdfs:comment>
+        <rdfs:label xml:lang="pt">Campo Magnético Y</rdfs:label>
+        <rdfs:label xml:lang="en">Magnetic Field Y</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#MagneticFieldZ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#MagneticFieldZ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Aspect"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#PrimaryContext"/>
+        <rdfs:comment>Z-axis component of the magnetic field.</rdfs:comment>
+        <rdfs:label xml:lang="pt">Campo Magnético Z</rdfs:label>
+        <rdfs:label xml:lang="en">Magnetic Field Z</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Mean -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Mean">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Aspect"/>
+        <rdf:type rdf:resource="https://w3id.org/function/ontology#Problem"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#SecondaryContext"/>
+        <terms:description>This handles the problem of calculating the mean of a set of values.</terms:description>
+        <rdfs:label xml:lang="en">Mean</rdfs:label>
+        <rdfs:label xml:lang="pt">Média</rdfs:label>
+        <fno:name>A mean problem</fno:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#OrientationX -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#OrientationX">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Aspect"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#SecondaryContext"/>
+        <rdfs:comment>X-axis component of the orientation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Orientation X</rdfs:label>
+        <rdfs:label xml:lang="pt">Orientação X</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#OrientationY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#OrientationY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Aspect"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#SecondaryContext"/>
+        <rdfs:comment>Y-axis component of the orientation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Orientation Y</rdfs:label>
+        <rdfs:label xml:lang="pt">Orientação Y</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#OrientationZ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#OrientationZ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Aspect"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#SecondaryContext"/>
+        <rdfs:comment>Z-axis component of the orientation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Orientation Z</rdfs:label>
+        <rdfs:label xml:lang="pt">Orientação Z</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#PrimaryContext -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#PrimaryContext">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#OperationalCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#RelationalCategory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#RelationalCategory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ConceptualCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#RotationX -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#RotationX">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Aspect"/>
+        <rdfs:comment>X-axis of rotation vector.</rdfs:comment>
+        <rdfs:label xml:lang="en">Rotation X</rdfs:label>
+        <rdfs:label xml:lang="pt">Rotação X</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#RotationY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#RotationY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Aspect"/>
+        <rdfs:comment>Y-axis component of rotation vector.</rdfs:comment>
+        <rdfs:label xml:lang="en">Rotation Y</rdfs:label>
+        <rdfs:label xml:lang="pt">Rotação Y</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#RotationZ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#RotationZ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Aspect"/>
+        <rdfs:comment>Z-axis component of rotation vector.</rdfs:comment>
+        <rdfs:label xml:lang="en">Rotation Z</rdfs:label>
+        <rdfs:label xml:lang="pt">Rotação Z</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#SecondaryContext -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#SecondaryContext">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#OperationalCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#StatUtils_Mean_Mapping -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#StatUtils_Mean_Mapping">
+        <rdf:type rdf:resource="https://w3id.org/function/vocabulary/mapping#StringMethodMapping"/>
+        <fnom:method-name>mean</fnom:method-name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#StatUtils_Mean_OutputMap -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#StatUtils_Mean_OutputMap">
+        <rdf:type rdf:resource="https://w3id.org/function/vocabulary/mapping#DefaultReturnMapping"/>
+        <fnom:functionOutput rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#FloatingPointMeanFunction_Output"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#StatUtils_Mean_values_ParamMap -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#StatUtils_Mean_values_ParamMap">
+        <rdf:type rdf:resource="https://w3id.org/function/vocabulary/mapping#PositionParameterMapping"/>
+        <fnom:functionParameter rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ListParameter"/>
+        <implementationType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[Ljavax.measure.Quantity;</implementationType>
+        <fnom:implementationParameterPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</fnom:implementationParameterPosition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#TimeCategory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#TimeCategory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ConceptualCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#doubleResult -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#doubleResult"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#listParameter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#listParameter"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#List -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#nil -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#double -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2001/XMLSchema#double"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#Aspect"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextCategory"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#QoCParameter"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextValue"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextualElement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextualElementInput"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#ContextualElementInstance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lvian/ontologies/2022/4/frameworktese#SimpleQoCValue"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
